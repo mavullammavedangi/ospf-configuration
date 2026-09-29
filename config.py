@@ -9,8 +9,8 @@ device={
 
 connection=ConnectHandler(**device)
 connection.enable()
-k=connection.find_prompt()
-print(k)
+p=connection.find_prompt()
+print(p)
 output=connection.send_command("sh running-config | section ospf")
 print(output)
 connection.disconnect()
